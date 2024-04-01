@@ -5,7 +5,7 @@ import { RepeatWrapping, TextureLoader } from "three";
 const FloatingGround = () => {
   const texture = useLoader(
     TextureLoader,
-    import.meta.env.VITE_PUBLIC_URL + "grid-texture.png"
+    `${import.meta.env.VITE_PUBLIC_URL}grid-texture.png`
   );
 
   useEffect(() => {

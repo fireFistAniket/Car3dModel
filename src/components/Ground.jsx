@@ -5,8 +5,8 @@ import { LinearSRGBColorSpace, RepeatWrapping, TextureLoader } from "three";
 
 const Ground = () => {
   const [roughness, normal] = useLoader(TextureLoader, [
-    import.meta.env.VITE_PUBLIC_URL + "terrain-roughness.jpg",
-    import.meta.env.VITE_PUBLIC_URL + "terrain-normal.jpg",
+    `${import.meta.env.VITE_PUBLIC_URL}terrain-roughness.jpg`,
+    `${import.meta.env.VITE_PUBLIC_URL}terrain-normal.jpg`,
   ]);
 
   useEffect(() => {
